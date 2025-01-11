@@ -7,7 +7,7 @@
 		<meta name="author" content="" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
-		<title>Reflux HTML CSS Template</title>
+		<title>Angel Cordero</title>
 		<!--
 Reflux Template
 https://templatemo.com/tm-531-reflux
@@ -80,6 +80,9 @@ https://templatemo.com/tm-531-reflux
 							>Soy desarrollador frontend con experiencia en la creación de aplicaciones web educativas y financieras. Además, he contribuido al desarrollo de aplicaciones web y móviles
 							enfocadas en la gestión de alumbrado público. Mi enfoque se centra en crear soluciones eficientes, funcionales y atractivas para el usuario.</span
 						>
+						<div class="button_cv">
+							<button id="downloadCvBtn">Descargar CV</button>
+						</div>
 					</div>
 					<!-- <div class="left-image-post">
 						<div class="row">
@@ -141,29 +144,92 @@ https://templatemo.com/tm-531-reflux
 							<div class="service-item">
 								<div class="first-service-icon service-icon"></div>
 								<h4>Frontend</h4>
-								<p>HTML; CSS; Bootstrap; Vanilla JavaScript; Vue; React</p>
+								<p>
+									<span class="technology-item">
+										<img src="assets/images/html-icon.png" alt="HTML Icon" class="tech-icon" />
+										HTML
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/css-icon.png" alt="CSS Icon" class="tech-icon" />
+										CSS
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/bootstrap-icon.png" alt="Bootstrap Icon" class="tech-icon" />
+										Bootstrap
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/js-icon.png" alt="JavaScript Icon" class="tech-icon" />
+										JavaScript
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/vue-icon.png" alt="Vue Icon" class="tech-icon" />
+										Vue
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/react-icon.png" alt="React Icon" class="tech-icon" />
+										React
+									</span>
+								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="service-item">
 								<div class="second-service-icon service-icon"></div>
 								<h4>Mobile</h4>
-								<p>Android Studio & Java</p>
-								<br />
+								<p>
+									<span class="technology-item">
+										<img src="assets/images/android-icon.png" alt="HTML Icon" class="tech-icon" />
+										Android Studio
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/java-icon.png" alt="HTML Icon" class="tech-icon" />
+										Java
+									</span>
+									<br />
+									<br />
+									<br />
+									<br />
+								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="service-item">
 								<div class="third-service-icon service-icon"></div>
 								<h4>Backend</h4>
-								<p>Node(JavaScript); Express; PHP</p>
+								<p>
+									<span class="technology-item">
+										<img src="assets/images/nodejs-icon.png" alt="HTML Icon" class="tech-icon" />
+										Node
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/express-icon.png" alt="HTML Icon" class="tech-icon" />
+										Express
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/php-icon.png" alt="HTML Icon" class="tech-icon" />
+										PHP
+									</span>
+								</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="service-item">
 								<div class="fourth-service-icon service-icon"></div>
 								<h4>Databases</h4>
-								<p>FireBird; MySQL; MongoDB</p>
+								<p>
+									<span class="technology-item">
+										<img src="assets/images/firebird-icon.png" alt="HTML Icon" class="tech-icon" />
+										FireBird
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/mysql-icon.png" alt="HTML Icon" class="tech-icon" />
+										MySQL
+									</span>
+									<span class="technology-item">
+										<img src="assets/images/mongodb-icon.png" alt="HTML Icon" class="tech-icon" />
+										MongoDB
+									</span>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -422,6 +488,17 @@ https://templatemo.com/tm-531-reflux
 				// Abrir enlace mailto
 				window.location.href = mailtoLink;
 			}
+
+			// Función para descargar el CV
+			document.getElementById("downloadCvBtn").addEventListener("click", function () {
+				const link = document.createElement("a");
+				link.href = "./Angel_Cordero_cv.pdf"; // Ruta del archivo en la carpeta pública
+				link.download = "Angel_Cordero_cv.pdf"; // Nombre con el que se descargará
+				link.style.display = "none"; // Oculta el enlace
+				document.body.appendChild(link); // Agrega el enlace al DOM
+				link.click(); // Simula el clic para iniciar la descarga
+				document.body.removeChild(link); // Elimina el enlace del DOM
+			});
 		</script>
 	</body>
 </html>

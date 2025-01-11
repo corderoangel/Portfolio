@@ -303,6 +303,10 @@ html {
 	color: #fff;
 }
 
+.section-heading .button_cv {
+	margin-top: 20px;
+}
+
 .section-heading .line-dec {
 	width: 60px;
 	height: 3px;
@@ -397,6 +401,7 @@ button:hover {
 	padding: 50px;
 	background-color: rgba(250, 250, 250, 0.1);
 	transition: all 0.5s;
+	/* text-align: center; */
 }
 
 .service-item h4 {
@@ -459,6 +464,24 @@ button:hover {
 
 .service-item:hover .fourth-service-icon {
 	background-image: url(../images/forth-bdX-icon.png);
+}
+
+/* .service-item .service-icon .technology-item img{
+
+} */
+
+.technology-item {
+	display: inline-block;
+	margin: 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.tech-icon {
+	width: 32px; /* Ajusta según tu preferencia */
+	height: 32px; /* Ajusta según tu preferencia */
+	display: block;
+	margin: 0 auto 5px;
 }
 
 /* My Work */
