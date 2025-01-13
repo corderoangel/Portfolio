@@ -484,6 +484,11 @@ button:hover {
 	margin: 0 auto 5px;
 }
 
+.text-justify {
+	display: block;
+	text-align: justify;
+}
+
 /* My Work */
 
 section.my-work .section-heading {
@@ -521,6 +526,10 @@ section.my-work .section-heading {
 .isotope-box {
 	position: relative;
 	width: 100%;
+}
+
+.isotope-seeprojects {
+	text-align: center;
 }
 
 .isotope-toolbar {
